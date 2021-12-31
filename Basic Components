@@ -1,0 +1,12 @@
+Pod :- Basic fundamental unit in Kubernetes ( abstraction over containers is also known as Pod)
+Deployments (stateless) :- Abstraction over Pods. In Real time if we want to create Pods we use Deployment component.
+Statefulsets (statefull) :-  If we want to create Database Pods we use Statefulset component.
+Service :- For each Pod there should be one Permanent IP address known as Service. Mainly services are used for communication b/w the pods.
+External Service (Ingress Traffic) :- If users need to use our frontend application then we need expose our service to External then only Public can access it.
+configMap :- Here we will store Environment variables, DB urls etc..
+Secrets :- Here we will store credentials like username, passwords etc..
+
+Note :- 
+Every YAML file contains 2 parts. 
+  1. Metadata like Deploymentname,lables..
+  2. Specification
